@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+.welcoming { 
+    color: #f7f7f7;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+.welcoming:hover {
+
+    text-shadow: 2px 2px 8px #000000;
+}
+.headerStyle{
+    position: fixed;
+    margin: 0px  ;
+    height : 100px ;
+    background-color: rgb(78, 14, 14);
+    width: 100%;
+    box-shadow: -1rem 0 3rem #000;
+
+}
+.headerStyle:hover{
+    box-shadow: 2px 2px 8px #000000;
+}
+.home{
+    color: antiquewhite;
+    margin-top: 100px;  
+    text-align: left;
+}
