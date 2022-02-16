@@ -26,14 +26,16 @@ function Movie(props) {
                         </div>
                     </Card.Body>
                     {
+
                         <ModalMovie cardInfo={cardInfo} setCardInfo={setCardInfo} show={show} setShow={setShow} handleClose={handleClose} />
+
                     }
                 </Card>
             </Col>
         </div>
-        
 
-)
+
+    )
 
 }
 
