@@ -2,7 +2,6 @@
 import MovieList from '../MovieList/MovieList'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-URL=process.env.URL; 
 
 
 function Home()
