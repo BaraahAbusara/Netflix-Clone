@@ -1,7 +1,12 @@
 //import './MovieList.css';
 import Movie from '../Movie/Movie'
 
+
+import { useState, useEffect } from 'react';
+
 function MovieList(props) {
+    
+
 
     return (
 
@@ -10,7 +15,9 @@ function MovieList(props) {
             {
                 props.data.length && props.data.map((data, idx) => (
                     <div key={idx} >
-                        <Movie data={data} />
+
+                        <Movie data={data}/>
+
                     </div>
                 ))
             }

@@ -5,7 +5,7 @@ import { Button, Container, Row, Card, Col } from 'react-bootstrap';
 
 
 function Movie(props) {
-    //{ console.log(props.ele) }
+
     const [cardInfo, setCardInfo] = useState({});
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -26,7 +26,9 @@ function Movie(props) {
                         </div>
                     </Card.Body>
                     {
-                        <ModalMovie cardInfo={cardInfo} show={show} handleClose={handleClose} />
+
+                        <ModalMovie cardInfo={cardInfo} setCardInfo={setCardInfo} show={show} setShow={setShow} handleClose={handleClose} />
+
                     }
                 </Card>
             </Col>
