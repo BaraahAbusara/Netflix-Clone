@@ -1,4 +1,4 @@
-//import './Home.css';
+import './Home.css';
 import MovieList from '../MovieList/MovieList'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
