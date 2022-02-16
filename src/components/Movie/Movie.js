@@ -1,5 +1,5 @@
 
-
+import ModalMovie from '../ModalMovie/ModalMovie';
 import { useState, useEffect } from 'react';
 import { Button, Container, Row, Card, Col } from 'react-bootstrap';
 
@@ -8,6 +8,7 @@ function Movie(props) {
     //{ console.log(props.ele) }
     const [cardInfo, setCardInfo] = useState({});
     const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
     return (
         <div>
             <Col key={props.data.id} md={4}>
@@ -19,17 +20,20 @@ function Movie(props) {
                         <div>
                             <Button className='div-card-button' variant="primary"
                                 onClick={() => {
-                                    props.setCardInfo(props.data)
-                                    props.setShow(true);
+                                    setCardInfo(props.data)
+                                    setShow(true);
                                 }}>Add To Favorites</Button>
                         </div>
                     </Card.Body>
+                    {
+                        <ModalMovie cardInfo={cardInfo} show={show} handleClose={handleClose} />
+                    }
                 </Card>
             </Col>
         </div>
-        
 
-)
+
+    )
 
 }
 
